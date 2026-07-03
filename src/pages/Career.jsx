@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const experiences = [
     {
         year: "2024 – Present",
-        role: "UI/UX Designer & Software Developer, Freelance Service",
+        role: "UI/UX Designer & Web Developer",
         company: (
             <a
                 href="https://pixeljunkiestudio.in"
@@ -30,16 +30,26 @@ const experiences = [
             "Developed responsive frontends using React and Tailwind CSS, optimized layouts for performance and accessibility, and deployed projects via Git, Vercel, and Netlify. Assisted in creating branding assets and strategic landing pages to enhance client presence.",
     },
     {
-        year: "NOW",
-        role: "Freelance & Upskilling",
-        company: "Freelance",
-        description:
-            "Collaborated with clients to design intuitive UI/UX experiences in Figma and develop responsive frontends using React and Tailwind CSS. Delivered branding assets, interactive prototypes, and modern web interfaces while actively upskilling in design systems, accessibility, and advanced frontend frameworks.",
+    year: "NOW",
+    role: "SEO Analyst | Web Developer | Web Maintenance",
+    company: "Media7 News & Entertainments",
+    description:
+        "Working as an SEO Analyst and Web Developer, developing and maintaining company websites, contributing to the Media7 News Portal, building the Grace Financials website, creating AI-powered SEO workflows for the editorial team, and ensuring website performance, optimization, and reliability.",
     },
     {
         year: "NOW",
         role: "Freelance & Upskilling",
-        company: "Pixel Junkie Creative Studio",
+        company: (
+            <a
+                href="https://www.astrivix.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:underline"
+            >
+                Astrivix.corp
+                <span>→</span>
+            </a>
+        ),
         description:
             "Working as a freelancer at Pixel Junkie Creative Studio, collaborating with clients to design intuitive UI/UX experiences in Figma and develop responsive frontends using React and Tailwind CSS. Delivered branding assets, interactive prototypes, and modern web interfaces while actively upskilling in design systems, accessibility, and advanced frontend frameworks.",
     }

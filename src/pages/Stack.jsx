@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa6";
 
 const icons = [
 	{ name: "HTML", src: "/html.svg" },
@@ -17,12 +18,14 @@ const icons = [
 	{ name: "MySQL", src: "/MySQL.svg" },
 	{ name: "BootStrap", src: "/bootstrap.png" },
 	{ name: "Figma", src: "/Figma.svg" },
+	{ name: "Vercel", src: "/vercel.svg" },
+	{ name: "MUI", src: "/MUI.svg" },
 
 ];
 
 export default function Stack() {
 	function InlineIcon({ name }) {
-		// create initials: take first letters of up to two words, handle C# and Next.js
+		// create initials: take first letters of up to two words, handle special chars
 		const clean = name.replace(/[^A-Za-z0-9 ]/g, " ").trim();
 		const parts = clean.split(/\s+/).filter(Boolean);
 		let initials = parts.length === 1 ? parts[0].slice(0, 2) : parts[0][0] + parts[1][0];
@@ -89,8 +92,9 @@ export default function Stack() {
 						collaborating with others to bring their ideas to life. I have
 						hands-on experience with technologies including HTML, CSS,
 						JavaScript, React, Tailwind CSS, Node.js, Express.js, MongoDB,
-						Python, C#, Unity, and Next.js, and I'm constantly learning new tools
-						and frameworks to stay updated in the ever-evolving tech landscape.
+						Python, C#, Git, GitHub, and more. I'm
+						constantly learning new tools and frameworks to stay updated in the
+						ever-evolving tech landscape.
 					</p>
 				</div>
 
@@ -106,14 +110,16 @@ export default function Stack() {
 					))}
 
 					{/* Text chips for items without icons in public/ */}
-								{[
-								].map((name) => (
+								{["GitHub"].map((name) => (
 									<div
 										key={name}
 										className="flex flex-col items-center justify-center p-6 border border-white/10 rounded-lg bg-white/2"
 									>
-										{/* Inline icon for missing public images */}
-										<InlineIcon name={name} />
+										{name === "GitHub" ? (
+											<FaGithub className="w-14 h-14 mb-3 text-white" />
+										) : (
+											<InlineIcon name={name} />
+										)}
 										<div className="text-sm font-semibold">{name}</div>
 									</div>
 								))}

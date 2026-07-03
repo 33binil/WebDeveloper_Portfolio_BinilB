@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function WhatIDo() {
     const [hoverIndex, setHoverIndex] = useState(null);
@@ -46,7 +47,19 @@ export default function WhatIDo() {
     ];
 
     return (
-        <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start gap-16 px-6 sm:px-10 py-20">
+        <>
+            <Helmet>
+                <title>What I Do - Binil B</title>
+                <meta name="description" content="Binil B offers UI/UX Design and Full-Stack Development services — crafting intuitive interfaces and scalable web applications with modern technologies." />
+                <meta name="keywords" content="UI/UX Design, Full-Stack Development, Web Developer, Binil B, Figma, React, MERN" />
+                <meta property="og:title" content="What I Do - Binil B" />
+                <meta property="og:description" content="UI/UX Design and Full-Stack Development services by Binil B." />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="What I Do - Binil B" />
+                <meta name="twitter:description" content="UI/UX Design and Full-Stack Development services by Binil B." />
+            </Helmet>
+            <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start gap-16 px-6 sm:px-10 py-20">
             {/* LEFT SIDE — TITLE */}
             <div
                 className="relative md:left-64"
@@ -112,6 +125,7 @@ export default function WhatIDo() {
                     </div>
                 ))}
             </div>
-        </div>
+            </div>
+        </>
     );
 }
