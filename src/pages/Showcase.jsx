@@ -22,11 +22,11 @@ const projects = [
     },
     {
         id: "03",
-        title: "Pixel Junkie Creative Studio",
+        title: "Astrivix.in",
         role: "Web design and development",
         tools: "React, Tailwind CSS, Figma",
-        img: "https://raw.githubusercontent.com/33binil/Portfolio/main/public/img/pixeljunkie.png",
-        link: "https://pixeljunkiestudio.in",
+        img: "https://raw.githubusercontent.com/33binil/Portfolio/main/public/img/astrivix.png",
+        link: "https://astrivix.in",
     },
     {
         id: "04",
@@ -48,7 +48,7 @@ const projects = [
         title: "Media7 Website",
         role: "Corporate Website",
         tools: "React.js, Tailwind CSS, JavaScript",
-        img: "https://raw.githubusercontent.com/33binil/Portfolio/main/public/img/media7.jpg",
+        img: "https://raw.githubusercontent.com/33binil/Portfolio/main/public/img/media7.png",
         link: "https://media7cok.com/",
     },
     {
@@ -56,7 +56,7 @@ const projects = [
         title: "Grace Financials",
         role: "Corporate Website",
         tools: "React.js, Tailwind CSS, JavaScript",
-        img: "https://raw.githubusercontent.com/33binil/Portfolio/main/public/img/grace.jpg",
+        img: "https://raw.githubusercontent.com/33binil/Portfolio/main/public/img/grace.png",
         link: "https://gracefinancials.com/",
     },
 
