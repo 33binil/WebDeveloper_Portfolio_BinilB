@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const experiences = [
     {
-        year: "2024 – Present",
+        year: "2024 – 2026",
         role: "UI/UX Designer & Web Developer",
         company: (
             <a
